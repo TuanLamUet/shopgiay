@@ -5,21 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>VP Shoes</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <main>
+            <div>
+                <!-- <div class="top-page" style="float: right;margin-right: 20px;">
+                    <div class="my-btn login-btn">Trợ giúp</div>
+                    <div class="my-btn login-btn">Đăng ký</div>
+                    <div class="my-btn login-btn">Đăng nhập</div>
+                </div>
+                <div class="clearfix"></div>
+            </div> -->
             <!--header-->
-            <header id="header">
+            <header id="header" >
                 <div class="container-fluid">
-                    <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+                    <div class="nav-icon">
+                        <i class="fa fa-bars fa-3x"></i>
+                    </div>
+                    <div style="position:relative">
+                        <ul class="main-menu nav-sm">
+                                    <li><a href="./category.html">giày nam</a></li>
+                                    <li><a href="./category.html">giày nữ</a></li>
+                                    <li><a href="./category.html">giày đôi</a></li>
+                                    <li><a href="#">flash sale</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="logo"><a href="#"><img src="images/favicon.ico" alt=""></a></h1>
                     <nav>
                         <ul class="main-menu d-flex">
                             <li><a href="./category.html">giày nam</a></li>
-                            <li><a href="#">giày nữ</a></li>
-                            <li><a href="#">giày đôi</a></li>
+                            <li><a href="./category.html">giày nữ</a></li>
+                            <li><a href="./category.html">giày đôi</a></li>
                             <li><a href="#">flash sale</a></li>
                         </ul>
                     </nav>
@@ -29,7 +49,7 @@
                         </div>
                         <div class="cart-icon">
                             <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
-                            <span class="cart-numb">0</span>
+                            <span class="cart-numb">2</span>
                         </div>
                         <div class="quick-cart">
                             <div class="item d-flex">
@@ -51,8 +71,8 @@
                 </div>
             </header>
             <!--end header-->
-            <div class="main-page">
-                <!-- <section class="hero-part bnt-cha">
+            <!-- <div class="main-page">
+                <section class="hero-part bnt-cha">
                     <div class="content d-flex justify-content-center align-items-center flex-column">
                         <p class="sub-title">đang diễn ra</p>
                         <h2 class="text-center main-title">big member day 18/10 <br> 30% - 50% off</h2>
@@ -83,27 +103,31 @@
                         </div>
                     </div>
                 </section> -->
-                <section class="hero-part " style="display:flex;;">
-                        <div class="header__text " style="flex: 1">
+                <section class="hero-part ">
+                        <div class="header__text ">
                             <div class="content d-flex justify-content-center align-items-center flex-column">
                                 <p class="sub-title">đang diễn ra</p>
-                                <h2 class="text-center main-title">big member day 18/10 <br> 30% - 50% off</h2>
+                                <h2 class="text-center main-title">big member day 25/10 <br> 30% - 50% off</h2>
                             </div>
-                            <div class="header__icon" id="header__icon">
+                            <div href="#newProduct" class="header__icon" id="header__icon" style="transition: 0.8s ease">
                                 <p class="header__icon--text">Mua ngay</p>
                                 <i class="fa fa-cart-plus fa-4x header__icon--custom"></i>
                             </div>      
                         </div>
 
-                        <div class="header__image" style="flex: 1">
+                        <div class="header__image">
                             <div class="img_news">
-                                <img class="mySlides" src="./images/news1.jpg" alt="">
+                                <img class="mySlides" src="./images/news1.jpg"  alt="">
                                 <img class="mySlides" src="./images/news3.jpg" alt="">
+                                <i class="fa fa-angle-double-left fa-3x" style="position: absolute;display: block;top: 50%;background: none;opacity: 0.6;color: orangered;"></i>
+                                <i class="fa fa-angle-double-right fa-3x" style="position: absolute; display: block;top: 50%;right: 0;background: none;opacity: 0.6;color: orangered;"></i>
+                                <i class="dot" style="display:block; position:absolute; background: none;border: 1px solid orangered;padding: 5px ;border-radius: 50%;bottom: 2%;left: 49%;"></i>
+                                <i class="dot" style="display:block; position:absolute; background: none;border: 1px solid orangered;padding: 5px ;border-radius: 50%;bottom: 2%;left: 51%;"></i>
                             </div>
                         </div>
                 </section>
                 <!--sản phẩm mới nhất-->
-                <section class="products" class="mb-5">
+                <section class="products" class="mb-5" id="newProduct">
                     <div class="container text-center">
                         <h2 class="title">top sản phẩm <span>mới nhất</span></h2>
                         <div class="row">
@@ -122,7 +146,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Nike</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -146,7 +170,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Adidas</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -170,7 +194,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Balegora</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -197,7 +221,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Fila</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -217,7 +241,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Neval</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -242,7 +266,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Kuikalsa</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -267,7 +291,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Converse</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -287,7 +311,7 @@
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-12.jpg" alt=""></a>
                                                 <a class="prd-img-trg" href="#"><img src="images/prd-9.jpg" alt=""></a>
                                             </div>
-                                            <h3 class="item-name"><a href="#">Giày Thể Thao VPPORT</a></h3>
+                                            <h3 class="item-name"><a href="#">Giày Thể Thao Gucci</a></h3>
                                             <p class="prd-price">
                                                 <span class="old-price">450.000₫</span>
                                                 <span class="new-price">360.000₫</span>
@@ -520,12 +544,12 @@
                                 <div class="item">
                                     <figure class="d-flex flex-column align-items-center">
                                         <figcaption class="text-justify">
-                                            <h4 class="mb-4"><span>Customer's name</span></h4>
+                                            <h4 class="mb-4"><span>Hoàng Thảo</span></h4>
                                             <blockquote>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                               Đây là lần đầu tiên mình mua giày ở đây nhưng cực kỳ ưng luôn :)) giày êm chân, chất xịn và bền, sẽ ủng hộ shop nhiều    
                                             </blockquote>
                                         </figcaption>
-                                        <img src="images/customer.png" alt="">
+                                        <img src="images/ava1.jpg" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -533,12 +557,12 @@
                                 <div class="item">
                                     <figure class="d-flex flex-column align-items-center">
                                         <figcaption class="text-justify">
-                                            <h4 class="mb-4"><span>Customer's name</span></h4>
+                                            <h4 class="mb-4"><span>Trần Thảo My</span></h4>
                                             <blockquote>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                               Shop phục vụ rất tận tình, uy tín và chuyên nghiệp, hi vọng shop sẽ càng ngày càng phát triển hơn
                                             </blockquote>
                                         </figcaption>
-                                        <img src="images/customer.png" alt="">
+                                        <img src="images/ava2.jpg" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -546,12 +570,12 @@
                                 <div class="item">
                                     <figure class="d-flex flex-column align-items-center">
                                         <figcaption>
-                                            <h4 class="mb-4"><span>Customer's name</span></h4>
+                                            <h4 class="mb-4"><span>Ngần Nguyễn</span></h4>
                                             <blockquote class="text-justify">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                               Wao, không thể tin được, đi giày vào cái là mình cảm giác cao thêm 10 phân vậy, lúc ngủ cũng không muốn bỏ ra luôn
                                             </blockquote>
                                         </figcaption>
-                                        <img src="images/customer.png" alt="">
+                                        <img src="images/ava3.jpg" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -560,8 +584,8 @@
                 </section>
                 <!--end cảm nhận-->
                 <!--video-->
-                <section class="featured-video">
-                    <div class="container">
+                <section class="featured-video" >
+                    <div class="container" >
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="item text-right">
@@ -573,7 +597,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-7">
-                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/nHK0u40Ompc?autoplay=0" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/aF9n1r4pnKw?autoplay=0" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -589,7 +613,7 @@
                                     <figure>
                                         <a href="#"><img src="images/news1.jpg" alt=""></a>
                                         <figcaption>
-                                            <h4 class="item-name"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h4>
+                                            <h4 class="item-name"><a href="#">Michelle Obama khoe được Gucci tặng cả "shop" giày</a></h4>
                                             <a href="#" class="my-btn">xem thêm</a>
                                         </figcaption>
                                     </figure>
@@ -600,7 +624,8 @@
                                     <figure>
                                         <a href="#"><img src="images/news2.jpg" alt=""></a>
                                         <figcaption>
-                                            <h4 class="item-name"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h4>
+                                            <h4 class="item-name"><a href="#">Lệ Hằng hướng dẫn phối quần Jeen và giày cao cổ
+                                            </a></h4>
                                             <a href="#" class="my-btn">xem thêm</a>
                                         </figcaption>
                                     </figure>
@@ -611,7 +636,7 @@
                                     <figure>
                                         <a href="#"><img src="images/news3.jpg" alt=""></a>
                                         <figcaption>
-                                            <h4 class="item-name"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h4>
+                                            <h4 class="item-name"><a href="#">Adidas bất ngờ giảm giá trước tình hình căng thẳng Mỹ - Trung</a></h4>
                                             <a href="#" class="my-btn">xem thêm</a>
                                         </figcaption>
                                     </figure>
@@ -628,7 +653,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="item">
-                                <a href="#" class="logo"><img src="images/logo-light.png" alt=""></a>
+                                <a href="#" class="logo"><img src="images/favicon.ico" alt=""></a>
                                 <ul>
                                     <li><span>Hotline</span> 0123456789</li>
                                     <li><span>Cơ sở 1</span> Số 144 Xuân thủy - Cầu giấy - Hà Nội</li>
@@ -707,14 +732,22 @@
             function carousel() {
                 var i;
                 var x = document.getElementsByClassName("mySlides");
+                var y = document.getElementsByClassName("dot");
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
+                    y[i].style.background ="none";
                 }
                 slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
+                if (slideIndex > x.length) {slideIndex = 1} {
                 x[slideIndex-1].style.display = "block";
+                y[slideIndex-1].style.background ="red";
+                }
                 setTimeout(carousel, 2000); // Change image every 2 seconds
                 }    
+            function clickButton() {
+                var z = document.getElementById("header__icon");
+                z.setAttribute("style","h")
+            }    
         </script>
     </body>
 </html>

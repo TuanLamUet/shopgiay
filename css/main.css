@@ -24,11 +24,12 @@ ul, ol {
   background:linear-gradient(87deg,#f5365c 0,#f56036 100%);
   /* position: absolute; */
   position: relative;
-  top:70%;
-  left: 80%;
+  cursor: pointer;
+  top:90%;
+  left: 50%;
   display: block;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 10rem;
   border: solid 0.2rem #f5365c;
   transform: translate(-50%,-50%);
@@ -54,6 +55,10 @@ ul, ol {
     transform: translate(-50%, -50%);
     color: white;
 }
+.header__text{
+  flex: 1;
+  height: 30vh;
+}
 .header__icon--text{
     position: absolute;
     display: block;
@@ -64,7 +69,24 @@ ul, ol {
     font-weight:500;
     color: white;
 }
-
+.header__image{
+  flex: 1; 
+  position:relative;
+  display: none;
+}
+  @media only screen and (min-width: 1024px) {
+  .header__image{
+    display: block;
+  }
+  .header__icon{
+    top: 85%;
+    width: 13rem;
+    height: 13rem;
+  }
+  .header__text{
+    height: auto;
+  }
+}
 .item-name a {
   -webkit-transition: .4s;
   transition: .4s;
@@ -73,36 +95,10 @@ ul, ol {
 .item-name a:hover {
   color: #7a7a7a !important;
 }
-.btn-cha{
-position: relative;
-
-}
-.btn-firts {
-  display: block;
-  width: 200px;
-  height: 55px;
-  border: none;
-  background: #ff6962;
-  color: white;
-  border-radius: 25px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  position: absolute;
-  left: 50%;
-  bottom: 46%;
-  transform: translate(-50%, -50%);
-  font-weight: 500;
-  outline: none;
-}
-.btn-firts:hover {
-  background: white;
-  color: red;
-  transition: 0.4s;
-}
 
 /*title*/
 .title {
-  font-size: 2rem;
+  font-size:2rem;
   text-transform: uppercase;
   color: #7a7a7a;
   font-weight: 200;
@@ -117,6 +113,11 @@ position: relative;
   }
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .title::after {
   content: '';
   position: absolute;
@@ -139,8 +140,20 @@ position: relative;
   display: inline-block;
   border: 2px solid #fff;
   text-align: center;
-  padding: 4px 8px;
+  padding: 6px 8px;
   font-size: 1.5rem;
+}
+
+.login-btn{
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 4px 25px !important;
+  margin: 20px;
+  transition: 0.4s;
+}
+.login-btn:hover{
+  color: white;
+  background: #000000;
 }
 
 /*main header*/
@@ -205,20 +218,20 @@ position: relative;
   }
 }
 
-#header nav .main-menu {
+.main-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
 }
 
-#header nav .main-menu li {
+.main-menu li {
   list-style: none;
   position: relative;
   margin: 0 2rem;
 }
 
-#header nav .main-menu li:after {
+.main-menu li:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -232,12 +245,12 @@ position: relative;
           transition-delay: .1s;
 }
 
-#header nav .main-menu li:hover:after {
+.main-menu li:hover:after {
   width: 100%;
   left: 0;
 }
 
-#header nav .main-menu li a {
+.main-menu li a {
   display: block;
   color: #23232c;
   text-transform: uppercase;
@@ -301,6 +314,7 @@ position: relative;
 
 /*end main header*/
 .hero-part {
+  display: flex;
   padding: 13rem 0;
   /* background: url("../images/hero-bg.jpg") no-repeat center;
   background-size: cover; */
@@ -310,35 +324,64 @@ position: relative;
 }
 
 .hero-part .sub-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 4rem;
   letter-spacing: 1rem;
 }
 .main-title {
-  
   display: block;
   position: absolute;
-  top: 35%;
-  color: #f56036;
+  top: 28%;
+  color: #f5365c;
 }
 
 .sub-title {
   display: block;
   position:absolute;
-  top: 25%;
+  top: 18%;
   color: #f5365c;
 }
 
 .hero-part h2 {
   font-size: 3rem;
 }
+.nav-sm{
+  position: absolute;
+  top:20px;
+  left: -20px;
+  -webkit-box-shadow: 0px 6px 10px 4px #cacaca;
+  box-shadow: 0px 6px 10px 4px #cacaca;
+}
 
 @media only screen and (min-width: 1024px) {
   .hero-part h2 {
-    font-size: 7rem;
+    font-size: 4.5rem;
+  }
+  .sub-title{
+    font-size: 2rem;
+    top: 20%;
+  }
+  .main-title{
+    top: 35%;
+  }
+  .nav-icon{
+    display: none;
+  }
+  .nav-sm{
+    display: none;
   }
 }
 
+@media only screen and (min-width: 1650px) {
+  .hero-part h2 {
+    font-size: 7rem;
+  }
+  .header__icon{
+    width: 15rem;
+    height: 15rem;
+    top: 75%;
+  }
+}
 .featured-header {
   -webkit-transform: translateY(-10rem);
           transform: translateY(-10rem);
@@ -407,6 +450,9 @@ position: relative;
   }
 }
 
+.fa-bars{
+  color:black;
+}
 .prd-ftr-img {
   padding: 1rem 0;
   margin-bottom: 1rem;

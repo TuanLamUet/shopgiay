@@ -27,4 +27,17 @@ $(document).ready(function () {
     $('.cart-icon').click(function() {
         $('.quick-cart').slideToggle();
     });
+    //nav-bar 
+    $('.nav-sm').hide()
+    $('.fa-bars').click(function() {
+        $('.nav-sm').slideToggle();
+    })
+
+
+    $("#header__icon").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#newProduct").offset().top
+        }, 1000);
+    });
+
 })
